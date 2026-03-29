@@ -85,7 +85,8 @@ export default function Login() {
       <Card className="w-full max-w-md bg-card border-border">
         <CardHeader className="text-center">
           <CardTitle className="text-2xl">
-            <span className="text-primary">Dark</span>Feed
+            <span className="text-foreground">The</span>{" "}
+            <span className="text-primary">Telescope</span>
           </CardTitle>
           <CardDescription>Share your thoughts with the world</CardDescription>
         </CardHeader>

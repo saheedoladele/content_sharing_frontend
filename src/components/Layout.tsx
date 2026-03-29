@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Home, Search, PlusCircle, User, LogOut } from "lucide-react";
 import { useState } from "react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const { currentUser, logout } = useAuth();
@@ -30,7 +31,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <header className="sticky top-0 z-50 border-b border-border bg-card/80 backdrop-blur-xl">
         <div className="mx-auto flex h-14 max-w-4xl items-center gap-4 px-4">
           <Link to="/" className="flex items-center gap-2 font-bold text-lg shrink-0" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
-            <span className="text-primary">Dark</span><span className="text-foreground">Feed</span>
+            <span className="text-foreground">The</span>{" "}
+            <span className="text-primary">Telescope</span>
           </Link>
           <form onSubmit={handleSearch} className="hidden sm:flex flex-1 max-w-sm">
             <Input
@@ -40,7 +42,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               className="h-9 bg-secondary border-0 text-sm"
             />
           </form>
-          <div className="ml-auto flex items-center gap-2">
+          <div className="ml-auto flex items-center gap-1 sm:gap-2">
+            <ThemeToggle />
             {currentUser ? (
               <>
                 <Link to={`/profile/${currentUser.id}`}>
@@ -70,7 +73,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <p>
             © {new Date().getFullYear()}{" "}
             <Link to="/" className="font-medium text-foreground hover:text-primary transition-colors">
-              DarkFeed
+              The Telescope
             </Link>
           </p>
           <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
