@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
-import { api } from "@/lib/api";
-import type { User } from "@/lib/types";
+import { api } from "@/services/api";
+import type { User } from "@/types/users";
 
 /**
  * @param skipFetch — when true (e.g. viewer is the same user), skip GET /users/:id and use `currentUser` from callers instead.
