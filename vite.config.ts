@@ -12,7 +12,7 @@ export default defineConfig(() => ({
     },
     proxy: {
       "/api": {
-        target: "http://localhost:3002",
+        target: "https://content-sharing-api-1.onrender.com/",
         changeOrigin: true,
       },
     },

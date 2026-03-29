@@ -18,7 +18,7 @@
 | **Theming** | [next-themes](https://github.com/pacocoursey/next-themes) (class-based light/dark) |
 | **Toasts** | [Sonner](https://sonner.emilkowal.ski/), Radix toast |
 | **Forms & validation** | [React Hook Form](https://react-hook-form.com/), [Zod](https://zod.dev/), [@hookform/resolvers](https://github.com/react-hook-form/resolvers) |
-| **Linting & tests** | ESLint, [Vitest](https://vitest.dev/), [Testing Library](https://testing-library.com/) |
+| **Linting ** | ESLint |
 
 ## Getting started
 
